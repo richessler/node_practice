@@ -1,0 +1,15 @@
+include header
+if entries.length
+each entry in entries
+  .panel.panel-default
+    .panel-heading
+      .text-muted.pull-right
+        | #{entry.published}
+      | #{entry.title}
+    .panel-body
+      | #{entry.content}
+else 
+  | No Entries! 
+  a(href='/new-entrY') Add one!
+
+include footer

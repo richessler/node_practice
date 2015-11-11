@@ -1,0 +1,14 @@
+{
+  "name": "guest_book",
+  "author": "Richard Hessler",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1"
+  }
+}

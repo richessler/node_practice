@@ -1,0 +1,10 @@
+mixin user-widget(user)
+	.user-widget
+		img(src=user.profilePicture)
+		.user-name= user.name
+		.user-bio= user.bio
+
++user-widget({profilePicture: 'poooooooop', name: 'Richard', bio: 'more poop'})
+
+-each user in [{profilePicture: 'poooooooop', name: 'Richard', bio: 'more poop'},{profilePicture: 'poooooooop', name: 'Richard', bio: 'more poop'},{profilePicture: 'poooooooop', name: 'Richard', bio: 'more poop'},{profilePicture: 'poooooooop', name: 'Richard', bio: 'more poop'}]
+	+user-widget(user)

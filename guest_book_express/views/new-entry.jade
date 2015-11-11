@@ -1,0 +1,15 @@
+include header
+
+h2 Write a new entry!
+
+form(method='post' role='form' action='/new-entry')
+	.form-group
+		label(for='title') Title
+		input#title.form-control(type='text' name='title' placeholder='Entry Title' required=true)
+	.form-group
+		label(for='content') Entry text
+		textarea#content.form-control(name='content' placeholder='Love Express! It\'s a great tool for building websites!' rows='3' required=true)
+	.form-group
+		input.btn.btn-primary(type='submit' value='Post Entry')
+
+include footer

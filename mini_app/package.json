@@ -1,0 +1,9 @@
+{
+  "name": "mini-app",
+  "author": "Richard Hessler",
+  "privae": true,
+  "version": "0.2.0",
+  "dependencies": {
+    "mustache": "^2.2.0"
+  }
+}
