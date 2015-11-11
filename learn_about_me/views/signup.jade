@@ -1,0 +1,8 @@
+include _header
+
+h1 Sign up
+
+form(action="/signup" method="post")
+	input.form-control(name="username" type="text" placeholder="Username" required autofocus)
+	input.form-control(name="password" type="text" placeholder="Password" required)
+	input.btn.btn-primary.btn-block(type="submit" value="Sign up")
